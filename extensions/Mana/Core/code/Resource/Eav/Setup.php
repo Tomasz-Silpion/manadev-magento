@@ -63,7 +63,7 @@ class Mana_Core_Resource_Eav_Setup extends Mage_Eav_Model_Entity_Setup {
                 if (!empty($attr['backend'])) {
                     if ('_'===$attr['backend']) {
                         $attr['backend'] = $backendPrefix;
-                    } elseif ('_'===$attr['backend']{0}) {
+                    } elseif ('_'===$attr['backend'][0]) {
                         $attr['backend'] = $backendPrefix.$attr['backend'];
                     } else {
                         $attr['backend'] = $attr['backend'];
@@ -72,7 +72,7 @@ class Mana_Core_Resource_Eav_Setup extends Mage_Eav_Model_Entity_Setup {
                 if (!empty($attr['frontend'])) {
                     if ('_'===$attr['frontend']) {
                         $attr['frontend'] = $frontendPrefix;
-                    } elseif ('_'===$attr['frontend']{0}) {
+                    } elseif ('_'===$attr['frontend'][0]) {
                         $attr['frontend'] = $frontendPrefix.$attr['frontend'];
                     } else {
                         $attr['frontend'] = $attr['frontend'];
@@ -81,7 +81,7 @@ class Mana_Core_Resource_Eav_Setup extends Mage_Eav_Model_Entity_Setup {
                 if (!empty($attr['source'])) {
                     if ('_'===$attr['source']) {
                         $attr['source'] = $sourcePrefix;
-                    } elseif ('_'===$attr['source']{0}) {
+                    } elseif ('_'===$attr['source'][0]) {
                         $attr['source'] = $sourcePrefix.$attr['source'];
                     } else {
                         $attr['source'] = $attr['source'];
